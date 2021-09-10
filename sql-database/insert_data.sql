@@ -327,15 +327,3 @@ VALUES (1,'More Effective Agile Practices','','','Cedar',50),
        (12,'Building APIs in ASP.NET Core','','','Oak',30);
 
 -- TODO: workshop_speakers
-
-
-select setval('attendees_attendee_id_seq',COALESCE((select max(attendee_id) + 1 from attendees), 1));
-select setval('attendee_tickets_attendee_ticket_id_seq',COALESCE((select max(attendee_ticket_id) + 1 from attendee_tickets), 1));
-select setval('discount_codes_discount_code_id_seq',COALESCE((select max(discount_code_id) + 1 from discount_codes), 1));
-select setval('session_schedule_schedule_id_seq',COALESCE((select max(schedule_id) + 1 from session_schedule), 1));
-select setval('sessions_session_id_seq',COALESCE((select max(session_id) + 1 from sessions), 1));
-select setval('speakers_speaker_id_seq',COALESCE((select max(speaker_id) + 1 from speakers), 1));
-select setval('tags_tag_id_seq',COALESCE((select max(tag_id) + 1 from tags), 1));
-select setval('ticket_prices_ticket_price_id_seq',COALESCE((select max(ticket_price_id) + 1 from ticket_prices), 1));
-select setval('time_slots_time_slot_id_seq',COALESCE((select max(time_slot_id) + 1 from time_slots), 1));
-select setval('workshops_workshop_id_seq',COALESCE((select max(workshop_id) + 1 from workshops), 1));
