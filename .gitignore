@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#CUSTOM GITIGNORE STARTS FROM HERE#
+
+#Keeping database connection properties secret
+src/main/resources/application.properties
